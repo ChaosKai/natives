@@ -11,7 +11,10 @@ void ATTACH_ENTITY_TO_ENTITY_PHYSICALLY(Entity entity1, Entity entity2, int bone
 ```
 breakForce is the amount of force required to break the bond.  
 fixedRot - if false it ignores entity vector  
-p15 - is 1 or 0 in scripts - unknoun what it does  
+p15 - is 1 or 0 in scripts - It seems that this value decides on which element of a chain it attaches
+      0: attach to specified Object
+      1: attach to first Object in chain
+      (only matters in a chain of attachments)
 collision - controls collision between the two entities (FALSE disables collision).  
 teleport - do not teleport entity to be attached to the position of the bone Index of the target entity (if 1, entity will not be teleported to target bone)  
 p18 - is always 2 in scripts.  
